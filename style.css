@@ -1,0 +1,317 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  }
+
+body {
+font-family: Arial, sans-serif;
+background: #f5f7fb;
+color: #222;
+line-height: 1.6;
+}
+
+/* Navigation Bar */
+
+header {
+background: #111827;
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+
+.navbar {
+max-width: 1100px;
+margin: auto;
+padding: 18px 30px;
+display : flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+.logo {
+color: white;
+font-size: 28px;
+}
+
+.nav-links {
+display: flex;
+list-style: none;
+gap: 25px;
+}
+
+.nav-links a {
+color: white;
+text-decoration: none;
+font-size: 16px;
+}
+
+.nav-links a:hover {
+color: #60a5fa;
+}
+
+/* Home */
+
+.home {
+max-width: 1100px;
+min-height: 90vh;
+margin: auto;
+padding: 80px 30px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 50px;
+}
+
+.home-content {
+max-width: 600px;
+}
+
+.home-content h3 {
+font-size: 22px;
+color: #2563eb;
+}
+
+.home-content h1 {
+font-size: 55px;
+margin: 5px 0;
+color: #111827;
+}
+
+.home-content h2 {
+font-size: 25px;
+color: #4b5563;
+margin-bottom: 20px;
+}
+
+.home-content p {
+font-size: 18px;
+color: #555;
+margin-bottom: 25px;
+}
+
+/* Profile Image */
+
+.home-image img {
+width: 280px;
+height: 280px;
+object-fit: cover;
+border-radius: 50%;
+border: 7px solid #2563eb;
+}
+
+/* Buttons */
+
+.buttons {
+display: flex;
+flex-wrap: wrap;
+gap: 12px;
+}
+
+.btn,
+.social-btn {
+display: inline-block;
+padding: 12px 22px;
+border-radius: 6px;
+text-decoration: none;
+font-weight: bold;
+transition: 0.3s;
+}
+
+.btn {
+background: #2563eb;
+color: white;
+}
+
+.btn:hover {
+background: #1d4ed8;
+transform: translateY(-2px);
+}
+
+.social-btn {
+background: #111827;
+color: white;
+}
+
+.social-btn:hover {
+background: #374151;
+transform: translateY(-2px);
+}
+
+/* General Sections */
+
+.section {
+max-width: 1100px;
+margin: auto;
+padding: 80px 30px;
+}
+
+.section-title {
+text-align: center;
+font-size: 36px;
+margin-bottom: 40px;
+color: #111827;
+}
+
+/* About */
+
+.about-content {
+max-width: 800px;
+margin: auto;
+text-align: center;
+}
+
+.about-content p {
+margin-bottom: 15px;
+color: #555;
+font-size: 17px;
+}
+
+/* Skills */
+
+.skills-section {
+background: #eef2ff;
+max-width: none;
+padding-left: 30px;
+padding-right: 30px;
+}
+
+.skills-container {
+max-width: 1000px;
+margin: auto;
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 20 px
+}
+
+.skill-card {
+background: white;
+padding: 25px;
+text-align: center;
+border-radius: 10px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+transition: 0.3s;
+}
+
+.skill-card:hover {
+transform: translateY(-5px);
+}
+
+.skill-card h3 {
+color: #2563eb;
+margin-bottom: 8px;
+}
+
+/* Projects */
+
+.projects-container {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap : 25 px 
+}
+
+.project-card {
+background: white;
+padding: 25px;
+border-radius: 10px;
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+transition: 0.3s;
+}
+
+.project-card:hover {
+transform: translateY(-5px);
+}
+
+.project-card h3 {
+color: #2563eb;
+margin-bottom: 12px;
+}
+
+.project-card p {
+color: #555;
+margin-bottom: 15px;
+}
+
+.project-card span {
+display: inline-block;
+background: #e0e7ff;
+color: #1e40af;
+padding: 5px 10px;
+margin: 3px;
+border-radius: 5px;
+font-size: 13px;
+}
+
+/* Contact */
+
+.contact {
+text-align: center;
+}
+
+.contact p {
+color: #555;
+margin-bottom: 20px;
+}
+
+.contact-buttons {
+display: flex;
+justify-content: center;
+gap: 15px;
+}
+
+/* Footer */
+
+footer {
+background: #111827;
+color: white;
+text-align : center;
+padding: 20 px
+}
+
+/* Responsive Design */
+
+@media (max-width: 768px) {
+.navbar {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.nav-links {
+    gap: 12px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.home {
+    flex-direction: column-reverse;
+    text-align: center;
+    padding-top: 60px;
+}
+
+.home-content h1 {
+    font-size: 42px;
+}
+
+.home-content h2 {
+    font-size: 21px;
+}
+
+.buttons {
+    justify-content: center;
+}
+
+.home-image img {
+    width: 220px;
+    height: 220px;
+}
+
+.skills-container,
+.projects-container {
+    grid-template-columns: 1fr;
+}
+
+
+}
